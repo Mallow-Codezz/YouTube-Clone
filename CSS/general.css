@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(15, 15, 15);
+  padding-top: 80px;
+  padding-left: 120px;
+  padding-right: 24px;
+}
+
+p {
+  font-family: Roboto, Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  column-gap: 20px;
+  row-gap: 25px;
+}
+
+@media (max-width: 700px) {
+  .search-bar {
+    display: none;
+  }
+  .search-button {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .create-button {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .side-bar {
+    width: 70px;
+  }
+  
+  .side-bar-button div {
+    display: none;
+  }
+}

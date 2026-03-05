@@ -1,0 +1,57 @@
+.shorts-section {
+  grid-column: 1 / -1;
+  margin: 20px 0;
+}
+
+.shorts-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.shorts-header img {
+  height: 28px;
+}
+
+.shorts-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.shorts {
+  flex: 1;
+  flex-shrink: 0;
+}
+
+.shorts img {
+  width: 100%;
+  border-radius: 12px;
+  aspect-ratio: 9/16;
+  object-fit: cover;
+}
+.shorts:hover img {
+  opacity: 0.8;
+}
+.shorts:active img {
+  opacity: 0.5;
+}
+
+.shorts p {
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.shorts a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.shorts a:visited{
+  color: inherit;
+}

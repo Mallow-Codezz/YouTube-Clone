@@ -1,0 +1,218 @@
+.header {
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  height: 56px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 5px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(41, 41, 41);
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.menu-bar-button {
+  height: 40px;
+  width: 48px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 24px;
+  border: none; 
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.menu-bar-button:hover {
+  background-color: rgb(39, 39, 39);
+}
+.menu-bar-button:active {
+  opacity: 0.5;
+}
+
+.menu-bar {
+  height: 24px;
+}
+
+.youtube-logo {
+  height: 24px;
+  cursor: pointer;
+}
+
+.middle-section {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: 600px;
+  min-width: 0;
+}
+
+.search-bar {
+  flex: 1;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+  padding-left: 10px;
+  background-color: rgb(22, 22, 22);
+  border-radius: 30px 0 0 30px ;
+  border: none;
+  padding-left: 12px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 0;
+}
+.search-bar::placeholder {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 15px;
+  color: rgb(123, 123, 123);
+}
+
+.search-button {
+  height: 42px;
+  width: 42px;
+  background-color: rgb(51, 51, 51);
+  border: none;
+  border-radius: 0 30px 30px 0;
+  margin-left: 0;
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon {
+  height: 30px;
+}
+
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+.voice-search-button:hover {
+  background-color: rgb(39, 39, 39);
+}
+.voice-search-button:active {
+  opacity: 0.45;
+}
+.voice-search-button .tooltip, .create-button.tooltip, .bell-icon-button .tooltip {
+  position: absolute;
+  background-color: grey;
+  border-radius: 5px;
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.25s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.voice-search-button:hover .tooltip, .create-button:hover .tooltip, .bell-icon-button:hover .tooltip {
+  opacity: 1;
+}
+
+.voice-search-icon {
+  height: 24px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.create-button {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+.create-button:hover {
+  background-color: rgb(39, 39, 39);
+}
+.create-button:active {
+  opacity: 0.45;
+}
+
+.bell-icon-div {
+  position: relative;
+}
+
+.bell-icon-button {
+  height: 40px;
+  width: 48px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 20px;
+  border: none; 
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+.bell-icon-button:hover {
+  background-color: rgb(39, 39, 39);
+}
+.bell-icon-button:active {
+  opacity: 0.45;
+}
+
+.bell-icon {
+  height: 30px;
+}
+
+.notification {
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: red;
+  position: absolute;
+  top: -3px;
+  right: 0px;
+  border-radius: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.channel-picture {
+  height: 40px;
+  border-radius: 20px;
+}

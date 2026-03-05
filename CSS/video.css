@@ -1,0 +1,80 @@
+.video {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+.video:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+.video:active {
+  opacity: 0.5;
+}
+
+.video a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.video a:visited{
+  color: inherit;
+}
+
+.thumbnail-div {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.time-with-symbol, .time {
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: black;
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  border-radius: 7px;
+  opacity: 0.7;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.info-flexbox {
+  display: flex;
+}
+
+.pfp-div {
+  margin-right: 12px;
+  margin-top: 10px;
+}
+
+.pfp {
+  width: 36px;
+  border-radius: 30px;
+}
+
+.title {
+  margin-top: 10px;
+  color: white;
+  font-weight: 500;
+  flex: 1;
+}
+
+.author {
+  color: rgb(170, 170, 170);
+  margin-top: 5px;
+}
+
+.stats {
+  color: rgb(170, 170, 170);
+  margin-top: 2px;
+}
